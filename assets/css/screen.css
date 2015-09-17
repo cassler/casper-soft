@@ -372,7 +372,7 @@ pre code, pre tt {
     white-space: pre-wrap;
     background: transparent;
     border: none;
-    
+
     letter-spacing:-0.05em;
     padding: 0;
 }
@@ -1004,7 +1004,7 @@ body:not(.post-template) .post-title {
     padding-left: 12px;
     border-left: #d5dbde 1px solid;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     white-space: nowrap;
 }
 
