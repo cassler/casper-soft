@@ -247,8 +247,10 @@ h6 {
 }
 
 a {
-    color: #4A4A4A;
+    color: rgb(88, 131, 172);
     transition: color 0.3s ease;
+    text-decoration: none;
+    border-bottom:1px solid #EFEFEF;
 }
 
 a:hover {
@@ -970,7 +972,7 @@ body:not(.post-template) .post-title {
     display: block;
     margin: 1.75rem 0 0 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.2rem;
     color: #9EABB3;
 }
@@ -986,10 +988,13 @@ body:not(.post-template) .post-title {
 .post-meta a {
     color: #9EABB3;
     text-decoration: none;
+    display:inline-block;
+    white-sapce:nowrap;
 }
 
 .post-meta a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom:#E3EDF3 1px solid;
 }
 
 .user-meta {
@@ -1109,10 +1114,17 @@ body:not(.post-template) .post-title {
     font-style: italic;
     font-size: 1.3rem;
     line-height: 1.6em;
+    color:#9EABB3;
 }
 
 .footnotes li {
     margin: 0.6rem 0;
+}
+
+.footnotes li + li {
+  padding-top:1.2rem;
+  margin-top:1.2rem;
+  border-top:1px solid #EFEFEF
 }
 
 .footnotes p {
