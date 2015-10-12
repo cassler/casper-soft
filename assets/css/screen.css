@@ -187,8 +187,8 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Lato", serif;
-    /*font-weight:300;*/
+    font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", "Lato", serif;
+    font-weight:200;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -214,20 +214,24 @@ h4, h5, h6 {
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #2E2E2E;
     line-height: 1.15em;
+    letter-spacing: -0.06em;
     margin: 0 0 0.4em 0;
-    font-family: "Lato", sans-serif;
+    /*font-family: "Tungsten A", "Tungsten B", "Mercury SSm A", "Mercury SSm B", "Lato", serif;*/
+    font-family: "Mercury SSm A", "Mercury SSm B", "Lato", serif;
     text-rendering: geometricPrecision;
+    /*text-transform: uppercase;*/
+    font-weight:500;
 }
 
 h1 {
     font-size: 5rem;
-    letter-spacing: -2px;
+    /*letter-spacing: -2px;*/
     text-indent: -3px;
 }
 
 h2 {
     font-size: 3.6rem;
-    letter-spacing: -1px;
+    /*letter-spacing: -1px;*/
 }
 
 h3 {
@@ -1149,7 +1153,7 @@ body:not(.post-template) .post-title {
 }
 
 .post-footer h4 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     margin: 0;
 }
 
