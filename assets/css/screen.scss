@@ -23,7 +23,6 @@
 
 @import 'sass/normalize';
 @import 'sass/icons';
-
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic|Source+Code+Pro:400,500);
 
 /* ==========================================================================
@@ -31,11 +30,12 @@
    ========================================================================== */
 
     $font-sans-serif:    "Lato", serif;
-    $font-serif:         "Mercury SSm A", "Mercury SSm B", "Lato", serif;
+    $font-serif:         "Sentinel SSm A", "Sentinel SSm B", "Lato", serif;
     $font-fixed:         "Source Code Pro", Inconsolata, monospace, sans-serif;
-    $line-height-base:    1.6em;
 
+    $line-height-base:    1.6em;
     $font-size-base:     1.6em;
+
     $gray-dark:  #2E2E2E;
     $gray-lighter: darken(#EFEFEF,12%);
     $color-base: #5A6175;
@@ -47,7 +47,6 @@
     $brand-orange-lighter: lighten(#F69270,20%);
     $brand-orange: #F36C39;
     $brand-orange-dark: #EE4022;
-
 
     $body-bg: #fff;
 
@@ -95,7 +94,7 @@
             line-height: 1.15em;
             letter-spacing: -0.06em;
             margin: 0 0 0.4em 0;
-            font-family: $font-sans-serif;
+            font-family: $font-serif;
             text-rendering: geometricPrecision;
             /*text-transform: uppercase;*/
             font-weight:700;
@@ -866,24 +865,22 @@
         padding:auto;
         text-align: center;
         margin-bottom:1em;
+        overflow: hidden;
+        position: relative;
         .inner {
-             width:20vw;
-            height:20vw;
+            width:15vw;
+            height:15vw;
+            background-size:cover;
+            background-position: center -25%;
             overflow: hidden;
             padding:auto;
             text-align: center;
-            border-radius:20vw;
+            border:1vw solid $blue-tint;
+            border-radius:600px;
         }
        
-        position: relative;
-        img {
-            position:absolute;
-            left:-10vw;
-            min-width:20vw;
-            min-height:20vw;
-            max-width:40vw;
-
-        }
+       
+       
     }
     .post-title {
         text-align:center;
