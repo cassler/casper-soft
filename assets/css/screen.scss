@@ -23,14 +23,13 @@
 
 @import 'sass/normalize';
 @import 'sass/icons';
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic|Source+Code+Pro:400,500);
 
 /* ==========================================================================
    2. Variables - Setting up some base styles
    ========================================================================== */
 
-    $font-sans-serif:    "Lato", serif;
-    $font-serif:         "Sentinel SSm A", "Sentinel SSm B", "Lato", serif;
+    $font-sans-serif:    "Lato", "Helvetica Neue", Verdana, Arial, serif;
+    // $font-sans-serif:         "Sentinel SSm A", "Sentinel SSm B", "Lato", serif;
     $font-fixed:         "Source Code Pro", Inconsolata, monospace, sans-serif;
 
     $line-height-base:    1.6em;
@@ -94,7 +93,7 @@
             line-height: 1.15em;
             letter-spacing: -0.06em;
             margin: 0 0 0.4em 0;
-            font-family: $font-serif;
+            font-family: $font-sans-serif;
             text-rendering: geometricPrecision;
             /*text-transform: uppercase;*/
             font-weight:700;
@@ -210,7 +209,7 @@
     blockquote p {
         margin: 0.8em 0;
         font-style: italic;
-        font-family:$font-serif;
+        font-family:$font-sans-serif;
     }
 
     blockquote small {
@@ -782,7 +781,7 @@
         font-size: 2.2rem;
         line-height: 1.5em;
         font-weight: 300;
-        // font-family: $font-serif;
+        // font-family: $font-sans-serif;
         letter-spacing:-0.1em;
         font-style: italic;
         letter-spacing: 0.01rem;
@@ -1280,7 +1279,7 @@
     /* Location, website, and link */
     .author-profile .author-meta {
         margin: 2rem 0;
-        font-family: $font-serif;
+        font-family: $font-sans-serif;
         letter-spacing: 0.01rem;
         font-size: 1.7rem;
     }
