@@ -1,0 +1,19 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<div class="extra-pagination inner">
+    {{pagination}}
+</div>
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="{{post_class}}">
+
+    {{#has tag="quickbits"}}
+        {{> post-quickbit}}
+    {{else}}
+        {{> post-standard}}
+    {{/has}}
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

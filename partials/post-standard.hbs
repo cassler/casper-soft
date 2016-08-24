@@ -1,0 +1,34 @@
+    <header class="post-header">
+        
+        {{#if featured}}
+        {{#if image}}
+        
+        <div class='post-image'>
+            <a class='post-image' href="{{url}}"><div class="inner" style="background-image:url('{{image}}');" ></div></a>
+        </div>
+
+        {{/if}}
+        
+            <h4>Featured</h4>
+        {{/if}}
+        <h2 class="post-title">
+            <a href="{{url}}">{{{title}}}</a>
+        </h2>
+
+    </header>
+    {{#unless featured}}
+    <section class="post-content">
+        {{content}}
+    </section>
+    {{else}}
+    <section class="post-excerpt">
+        <p>{{excerpt words="50"}}</p>
+    </section>
+    {{/unless}}
+
+    <footer class="post-meta">
+        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
+        {{author}}
+        {{tags prefix=" regarding "}}
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
+    </footer>
